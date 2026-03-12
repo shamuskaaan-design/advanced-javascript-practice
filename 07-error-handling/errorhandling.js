@@ -22,54 +22,48 @@ add(7,9); */
 
 // Try & Catch in Error Handling
 
-try{
- let a = 15;
-console.log(a.age.name);  
+try {
+  let a = 15;
+  console.log(a.age.name);
+} catch (errorinfo) {
+  console.log(errorinfo);
 }
 
-catch(errorinfo){
-   console.log(errorinfo);
-}
-
-console.log("I will run because try and catch method handle the error and allow other code to run");
+console.log(
+  "I will run because try and catch method handle the error and allow other code to run",
+);
 
 //Error Details
 
-try{
-  function abcd(){
-  let name = "Error";
-  console.log(name.fullname.firstLetter);
-}
+try {
+  function abcd() {
+    let name = "Error";
+    console.log(name.fullname.firstLetter);
+  }
 
-abcd();
-}
- catch(error){
+  abcd();
+} catch (error) {
   console.log(error.name);
   console.log(error.message);
   console.log(error.stack);
- }
+}
 
- //Finally in try catch
- 
- try{
+//Finally in try catch
+
+try {
   let a = "Daraksha";
   console.log(a.age.name);
- }
- catch(error){
+} catch (error) {
   console.log(error);
- }
- finally{
+} finally {
   console.log("I will run even if the code has an error or not");
- }
+}
 
- // Custom Error Message
+// Custom Error Message
 
- try{
+try {
   let a = "Daraksha";
   console.log(a.age.name);
- }
- catch(error){
-  console.log(new Error ("Something is not right in the code"));
- }
-
-
+} catch (error) {
+  console.log(new Error("Something is not right in the code"));
+}
