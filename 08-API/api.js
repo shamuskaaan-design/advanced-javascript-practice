@@ -76,14 +76,12 @@ async function getWeather(city) {
   getWeather("Hyderabad");
 */
 
-let apikey = "d2e402797441d54b6578de6f0cbc6318";
+  let apikey = "d2e402797441d54b6578de6f0cbc6318";
 
 async function getWeather(){
 
   try{
 
-  document.getElementById("loader").style.display = "block";
-  
   let city = document.getElementById("cityInput").value;
 
 
@@ -116,9 +114,8 @@ async function getWeather(){
 }
 
 catch(error){
- 
-  document.getElementById("loader").style.display = "none";
 
   document.getElementById("error").innerText = "Error:" + error.message;
 }
 }
+
